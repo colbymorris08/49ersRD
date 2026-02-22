@@ -15,11 +15,21 @@ Or run the CLI model only:
 python build_injury_risk.py
 ```
 
+## Push to GitHub (repo: 49ersRD)
+
+1. **Create the repo on GitHub:** [github.com/new](https://github.com/new) → name it `49ersRD`, leave it empty (no README/license).
+2. **Set remote and push** (replace `YOUR_USERNAME` with your GitHub username if different):
+
+   ```bash
+   cd /Users/colbymorris/nflinjury
+   git remote set-url origin https://github.com/YOUR_USERNAME/49ersRD.git
+   git push -u origin main
+   ```
+
 ## Deploy Streamlit app (public)
 
-1. Push this repo to GitHub (e.g. `YOUR_USERNAME/49ersRD`).
-2. Go to [share.streamlit.io](https://share.streamlit.io), sign in with GitHub.
-3. **New app** → choose repo `49ersRD`, branch `main`, main file path `app.py`.
-4. Click **Deploy**. First run will install deps and build the model (may take a few minutes).
+1. Go to [share.streamlit.io](https://share.streamlit.io), sign in with GitHub.
+2. **New app** → choose repo `49ersRD`, branch `main`, main file path `app.py`.
+3. Click **Deploy**. First run will install deps and build the model (may take a few minutes).
 
 No secrets or env vars required; the app loads nflverse data at runtime.
