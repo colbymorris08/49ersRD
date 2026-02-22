@@ -18,11 +18,11 @@ python build_injury_risk.py
 ## Push to GitHub (repo: 49ersRD)
 
 1. **Create the repo on GitHub:** [github.com/new](https://github.com/new) → name it `49ersRD`, leave it empty (no README/license).
-2. **Set remote and push** (replace `YOUR_USERNAME` with your GitHub username if different):
+2. **Set remote and push:**
 
    ```bash
    cd /Users/colbymorris/nflinjury
-   git remote set-url origin https://github.com/YOUR_USERNAME/49ersRD.git
+   git remote set-url origin https://github.com/colbymorris08/49ersRD.git
    git push -u origin main
    ```
 
